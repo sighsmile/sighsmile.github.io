@@ -1,5 +1,5 @@
 ---
-title: webfrogs' Homepage
+title: Charlene's Blog
 layout: page
 ---
 
@@ -21,12 +21,12 @@ layout: page
 
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <a href="/"><前页</a>
+    <a href="/"><PREV</a>
     {% else %}
-    <a href="/page{{paginator.previous_page}}"><前页</a>
+    <a href="/page{{paginator.previous_page}}"><PREV</a>
     {% endif %}
   {% else %}
-    <span class="previous disabled"><前页</span>
+    <span class="previous disabled"><PREV</span>
   {% endif %}
 
       {% if paginator.page == 1 %}
@@ -44,10 +44,10 @@ layout: page
     {% endfor %}
 
   {% if paginator.next_page %}
-    <a class="next" href="/page{{paginator.next_page}}">后页></a>
+    <a class="next" href="/page{{paginator.next_page}}">NEXT></a>
   {% else %}
-    <span class="next disabled" >后页></span>
+    <span class="next disabled" >NEXT></span>
   {% endif %}
-  (共{{ paginator.total_posts }}篇)
+  (Total:{{ paginator.total_posts }}blogs)
 </div>
 
