@@ -12,4 +12,4 @@ Welcome. This is Charlene's blog.
 
 [GitHub] (http://github.com/sighsmile)
 
-No, I do not feel like social networking tools. 
+*No, I do not feel like social networking tools.*
