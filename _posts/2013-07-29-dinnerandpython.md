@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 德式双人餐与Python学习
+title: "德式双人餐与Python学习"
 description: "diary 20130729"
 category: diary
 tags: food Python Coursera
