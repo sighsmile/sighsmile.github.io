@@ -6,11 +6,11 @@ comments: no
 
 This blog is written by Charlene :
 
+- A self-motivated student in online courses. [See more](/about/education).
 - A freelance translator who has a day-time job as a technical editor.
 - A math lover who enjoys popular science (and hopes to be admitted in a math PhD program).
 - A not-so-multilingual learner who has some knowledge of English and Japanese, and is actively trying to understand French and Cantonese (btw, the mother tongue is Mandarin Chinese). 
 - A python beginner. 
-
 
 ----
 
