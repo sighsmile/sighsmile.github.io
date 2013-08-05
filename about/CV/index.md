@@ -9,12 +9,11 @@ comments: no
 ---
 *I'm not actively looking for employment, but I'm open to new challenges.*
 
-#[PDF version](/about/Charlene-CV.pdf) (not available now... )
+[PDF version](/about/Charlene-CV.pdf) (not available now... )
 
-<a href="#01"> </a>
 ---
 
-#Education & Training
+#Education & Training <a id="education"></a>
    
 *Confucius once said, "If I hear the Way [of truth] in the morning, I am content even to die in that evening." 
 It is never too late to learn -- if you don't stay up till the small hours every time.* 
@@ -51,3 +50,5 @@ Courses finished with certificates: 1
 #Projects & Experiences
 
 ###Translator, 2012 - 
+
+
