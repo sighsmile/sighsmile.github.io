@@ -52,7 +52,7 @@ B.Sc. in Chemistry. Honors Student.
 - **without lab sessions**: *Structural Chemistry*, *Applied Chemistry*, *Inorganic Chemistry*, *Chromatography*, *Radiochemistry*, *Organic Spectroscopy*, *Polymer Chemistry*, *Material Chemistry*, *Life Chemistry (Biochemistry)*       
 
 ---
-#Languages
+#Languages <a id="languages"></a>
 
 #####Python
 - Beginner
@@ -71,7 +71,7 @@ B.Sc. in Chemistry. Honors Student.
 
 ---
 
-#Projects & Experiences
+#Projects & Experience 
 
 ###Translator, 2012 - 
 
