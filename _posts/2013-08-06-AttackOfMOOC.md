@@ -15,38 +15,36 @@ tags: translation, MOOC, Coursera, Udacity, edX
 
 ---
 
-新型网络课程异军突起，传统高校如临大敌。不过，网络课程能找到可行的商业模式吗？
-
 *Translated by [Charlene](/about)*
+
+>新型网络课程异军突起，传统高校如临大敌。不过，网络课程能找到可行的商业模式吗？
 
 ![Online Certificate](http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/print-edition/D/20130720_WBD001_2.jpg)
 
-在互联网的狂热浪潮中，高等教育迟迟未受波及，如今，这一神圣殿堂终于陷落。2012年伊始，Udacity和Coursera双双上线，
+在互联网的狂热浪潮中，高等教育迟迟未受波及，如今，这一神圣殿堂终于陷落。2012年伊始，硅谷新秀Udacity和Coursera双双上线，藉由MOOC（massive open online courses，大型网络公开课程）提供免费教育，撼动学术象牙塔的根基。连同数百年历史的老牌名校在内，各大高校唯有正视现实：信息技术或将迅速推翻现有的大学商业模式。与此相对，MOOC虽然迄今未发现合适的商业模式，但课程数、资源及注册人数却已成倍增加。
 
-DOTCOM mania was slow in coming to higher education, but now it has the venerable industry firmly in its grip. Since the launch early last year of Udacity and Coursera, two Silicon Valley start-ups offering free education through MOOCs, massive open online courses, the ivory towers of academia have been shaken to their foundations. University brands built in some cases over centuries have been forced to contemplate the possibility that information technology will rapidly make their existing business model obsolete. Meanwhile, the MOOCs have multiplied in number, resources and student recruitment—without yet having figured out a business model of their own.
+大学除向本校学生（一般需付学费）提供线上课程之外，亦纷纷意识到加入MOOC革命浪潮方能自保。Coursera在全世界已有83所合作院校，其中不乏美国顶尖高校。Harvard和MIT出资6000万美元，于2012年5月联合创立另一家非营利MOOC网站edX，如今已有28所教育机构加盟，最新一所是IITB（印度理工学院孟买分校）。Open University早在20世纪70年代率先推动远程教育，旗下的FutureLearn已联合23所大学（英国21所、爱尔兰和澳大利亚各1所）与其他教育机构，将于今年晚些时候开放课程。不过，Oxford与Cambridge仍冷眼旁观MOOC，未像其他高校一样“趋之若鹜”（Oxford某高层如此表示其对MOOC的担忧）。
 
-Besides providing online courses to their own (generally fee-paying) students, universities have felt obliged to join the MOOC revolution to avoid being guillotined by it. Coursera has formed partnerships with 83 universities and colleges around the world, including many of America’s top-tier institutions.
+6月10日，Coursera称，继去年获得2200万美元风投以来，今年又获得4300万美元风投。尽管该网站注册学生数目飙升，已逾四百万之巨，但是投资者此番仍是放手一搏，指望它能发展出切实可行的商业模式。Coursera应该能够凭借这轮资金，在迅猛增多的MOOC提供方中，巩固自身作为领头羊的优势地位。“看着下海人数节节攀升，颇为有趣，”斯坦福教授兼Coursera联合创始人Daphne Koller表示。她希望Coursera跻身“极少数霸主”之列。
 
-EdX, a non-profit MOOC provider founded in May 2012 by Harvard University and the Massachusetts Institute of Technology and backed with $60m of their money, is now a consortium of 28 institutions, the most recent joiner being the Indian Institute of Technology in Mumbai. Led by the Open University, which pioneered distance-learning in the 1970s, FutureLearn, a consortium of 21 British, one Irish and one Australian university, plus other educational bodies, will start offering MOOCs later this year. But Oxford and Cambridge remain aloof, refusing to join what a senior Oxford figure fears may be a “lemming-like rush” into MOOCs.
+Koller女士认为，MOOC产业的网络经济学类似Amazon、eBay以及Google，都是“内容生产者趋向消费者最多之处，而消费者趋向内容最丰富之处”。FutureLearn的执行总裁Simon Nelson则不同意此论点。他指出，“凡是认为先来者已经定死规则的人，都大大低估了技术的潜力。”
 
-On July 10th Coursera said it had raised another $43m in venture capital, on top of the $22m it banked last year. Although its enrolments have soared, and now exceed 4m students, this is a huge leap of faith by investors that the firm can develop a viable business model. The new money should allow Coursera to build on any advantage it has from being a first mover among a rapidly growing number of MOOC providers. “It is somewhat entertaining to watch the number of people jumping on board,” says Daphne Koller, a Stanford professor and co-founder of Coursera. She expects it to become one of a “very small number of dominant players”.
+自然，商业模式的探索实验层出不穷。MOOC本身或许是免费的，但是在MOOC背后的人们眼里，盈利机遇非常充足。Coursera已经开始向完成课程并希望获得证明（或许用于求职）的学生提供证书，并为此收取费用。它也开始授权大学使用课程材料，充实各高校的原有课程。此前，它亦曾尝试帮助企业从学生中招聘员工，但是这一渠道暂告中止，Koller解释说，这是因为需要迎合不同雇主的不同需求，“很难扩大该模型”。
 
-The industry has similar network economics to Amazon, eBay and Google, says Ms Koller, in that “content producers go to where most consumers are, and consumers go to where the most content is.” Simon Nelson, the chief executive of FutureLearn, disagrees. “Anyone who thinks the rules of engagement have already been written by the existing players is massively underestimating the potential of the technology,” he says.
+相比之下，Udacity的商业模式则以员工培训为核心。它与几家公司开展合作，Google也在其中。近日，Udacity更联合AT&T及Georgia Tech，准备为学生提供计算机科学硕士学位项目，课程材料免费，学费约为7000美元。edX独辟蹊径，向Stanford等大学推销其MOOC技术，如此各校得以扩充现有教学设计，既能自主编排MOOC课程，又能活跃传统的实际课堂。
 
-Certainly, there is plenty of experimentation with business models taking place. The MOOCs themselves may be free, but those behind them think there will be plenty of revenue opportunities. Coursera has started charging to provide certificates for those who complete its courses and want proof, perhaps for a future employer. It is also starting to license course materials to universities that want to beef up their existing offering. However, it has abandoned for now attempts to help firms recruit employees from among Coursera’s students, because catering to the different needs of each employer was “not a scalable model”, says Ms Koller.
+**本课程由……赞助播出**
 
-For Udacity, in contrast, working with companies to train existing and future employees is now the heart of its business model. It has tie-ups with several firms, including Google. It recently formed a partnership with AT&T, along with Georgia Tech, to offer a master’s degree in computer science. Course materials will be free, but students will pay around $7,000 for tuition. EdX is taking yet another tack, selling its MOOC technology to universities like Stanford, both to create their own MOOC offerings and to make physically attending university more attractive, by augmenting existing teaching.
+Alison是爱尔兰的一家免费教育提供商，主打职业教育，创办于2007年，当时MOOC尚未得名。它在网站上出售广告位，收入颇丰。“广告曾经推动广播与电视发展，何不用于教育呢？教育界很多人鄙视广告，只是装逼而已，”Alison创办人Mike Feerick指出。
 
-This lecture is brought to you by…
+>译注：最后这句翻译得过了，面壁。
 
-Alison, an Irish provider of free, mostly vocational education founded in 2007, before MOOCs got their name, is generating plenty of revenue by selling advertising on its site. “Ads propelled radio and TV, why not education? There is a lot of misplaced snobbery in education about advertising,” says Mike Feerick, Alison’s founder.
+还有一类MOOC提供方也很重要，就是出版商。这一观点来自Rob Lytle，他供职于咨询机构Parthenon Group。他认为，诸如Pearson（也是The Economist的共同所有者）之类从事教科书出版等教育业务的公司，或可通过提供免费MOOC，促进相关付费内容销售，从而蓬勃发展。
 
-Another important category of MOOC providers are publishers, says Rob Lytle of the Parthenon Group, a consultancy. He says firms like Pearson (part-owner of The Economist) that run educational businesses such as textbook-publishing may thrive by offering free MOOCs as a way to get people to buy their related paid content.
+对于MOOC而言，何种商业模式能够盈利，抑或根本不可能盈利，目前尚无定论。与此同时，MOOC市场规模如何，各方亦各执己见。有人认为这是一场零和博弈，甚至是负和博弈，供应方廉价供应线上内容，彻底拉低高等教育成本，迫使许多传统机构崩溃。也有人认为MOOC将大幅增加人们接受高等教育的机会，益处远远大于前述弊端。
 
-Besides the uncertainty over which business model, if any, will produce profits, there is disagreement over how big the market will be. Some see a zero- or negative-sum game, in which cheap online providers radically reduce the cost of higher education and drive many traditional institutions to the wall. Others believe this effect will be dwarfed by the dramatic increase in access to higher education that the MOOCs will bring.
+Feerick预计，高等教育市场将商品化，许多机构因此面临危机。edX的老板Anant Agarwal则推测，MOOC提供方会像机票预订网站那样，通过改善客户体验，扩大市场规模。Udacity的联合创始人Sebastian Thrun认为，正如发明电影之后，对戏剧表演的需求随之增加，MOOC也应具有类似程度的效应：他估计高等教育市场规模将增为原先的十倍。
 
-Mr Feerick predicts that the market will be commoditised, spelling trouble for many institutions. But Anant Agarwal, the boss of EdX, reckons the MOOC providers will be more like online airline-booking services, expanding the market by improving the customer experience. Sebastian Thrun, Udacity’s co-founder, thinks the effect will be similar in magnitude to what the creation of cinema did to demand for staged fiction: he predicts a tenfold increase in the market for higher education.
+持怀疑态度的人指出，MOOC的辍学率很高，有时超过90%。不过Coursera和Udacity都坚称，这恰恰反映出，消费者对于免费产品抱有不同预期，浏览产品又无需费用。根据两家网站对辍学率的分析，一开始就打算完成课程的学生中，绝大多数都确实完成了课程。
 
-Sceptics point to the MOOCs’ high drop-out rates, which in some cases exceed 90%. But Coursera and Udacity both insist that this reflects the different expectations of consumers of free products, who can browse costlessly. Both firms have now studied drop-out rates for those students who start with the stated intention of finishing, and found that the vast majority of them complete the courses.
-
-Besides LearnCapital, a Silicon Valley venture firm, and the World Bank’s International Finance Corporation, the participants in Coursera’s $43m fund-raising included Laureate, an operator of for-profit universities. Doug Becker, its boss, reckons that many established universities will soon offer credits towards their degrees for those who complete MOOCs. He thinks this will drive a dramatic reduction in the price of a traditional higher education, that will reduce the total revenues of existing providers by far more than the revenue gained by the start-ups. Still, if MOOCs reduce the cost of higher education by one-third, as he predicts, yet only earn for themselves 1% of that benefit, that would “still be a very nice business,” he says.
+Coursera的4300万美元基金来源包括：硅谷风投公司LearnCapital，世界银行下属的国际金融公司，以及营利性大学运营商Laureate。后者的老板Doug Becker预测，许多知名高校很快就会向完成MOOC的学生提供学分，可用于获得学位。他认为，这会大幅降低传统高等教育的价格，从而大幅减少传统高校的收入，而新生MOOC网站的收入增幅小得多。即便如此，据他估算，只要MOOC让高等教育的成本削减三分之一，就算这部分钱只有1%进入MOOC的钱包，“业务也算是非常景气了”。
