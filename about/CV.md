@@ -27,8 +27,9 @@ Courses finished with certificates: 1
 #####Computer Science
 - [*Computer Science 101*](https://www.coursera.org/course/cs101), Self study, Stanford University
 
-#####Humanities & Social Sciences
-- *Archaeology's Dirty Little Secrets*, June 2013, Brown University
+#####Humanities, Social Sciences & Others
+- [*Nutrition and Physical Activity for Health*](https://www.coursera.org/course/nutrition), June 2013, University of Pittsburgh
+- [*Archaeology's Dirty Little Secrets*](https://www.coursera.org/course/secrets), June 2013, Brown University
 - [*Crafting an Effective Writer: Tools of the Trade*](https://www.coursera.org/course/basicwriting), May 2013, Mt. San Jacinto College
 
 ---
