@@ -19,7 +19,7 @@ comments: no
 It is never too late to learn -- if you don't stay up till the small hours every time.* 
 
 ###[Coursera](http://www.coursera.org), 2013 - Present
-Courses finished with certificates: 1
+Statements of Accomplishment: 2
 
 #####Mathematics, Statistics & Data Analysis
 - *None yet*
