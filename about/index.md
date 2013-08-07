@@ -11,7 +11,8 @@ This blog is written by Charlene :
 - A math lover who enjoys popular science (and hopes to be admitted in a math PhD program).
 - A not-so-multilingual learner who has some knowledge of English and Japanese, and is actively trying to understand Python, French and Cantonese (btw, the mother tongue is Mandarin Chinese). [More...](/about/CV#languages)
 
-----
+
+---
 
 ###Elsewhere     
  
@@ -26,5 +27,9 @@ You might find me here:
 
 ###Acknowledgement
 
-The blog is based on a template modified by <a href="https://github.com/webfrogs/webfrogs.github.com">webfrogs</a>. Comments-related features are trimmed off.
+The blog is based on a template provided by <a href="https://github.com/webfrogs/webfrogs.github.com">webfrogs</a> (as far as I know, he is not the original designer, either). Comments-related features are trimmed off. Some fonts are changed. 
 
+The icon of this site is designed by Charlene. 
+*PiCat*, as it is called, is a cat-like, math-oriented animal. It hides its tail, but it definitely has at least one. 
+
+![PiCat](\assets\picat.png)
