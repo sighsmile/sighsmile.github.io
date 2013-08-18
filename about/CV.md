@@ -25,12 +25,19 @@ Statements of Accomplishment: 2
 - *None yet*
 
 #####Computer Science
-- [*Computer Science 101*](https://www.coursera.org/course/cs101), Self study, Stanford University
+- [*Computer Science 101*](https://www.coursera.org/course/cs101), self study, Stanford University
 
 #####Humanities, Social Sciences & Others
 - [*Nutrition and Physical Activity for Health*](https://www.coursera.org/course/nutrition), June 2013, University of Pittsburgh
 - [*Archaeology's Dirty Little Secrets*](https://www.coursera.org/course/secrets), June 2013, Brown University
 - [*Crafting an Effective Writer: Tools of the Trade*](https://www.coursera.org/course/basicwriting), May 2013, Mt. San Jacinto College
+
+---
+###[Udacity](http://www.udacity.com), 2013 - Present
+Certificate: 1
+
+- Mathematics
+	- [*Introduction to Statistics*](https://www.udacity.com/course/st101), with high distinction
 
 ---
 
