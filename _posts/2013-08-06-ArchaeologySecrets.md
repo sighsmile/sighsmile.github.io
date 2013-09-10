@@ -3,7 +3,7 @@ layout: post
 title: "Archaeology's Dirty Little Secrets"
 description: "review of the archaeology course"
 category: course
-tags: MOOC, Coursera
+tags: MOOC Coursera
 ---
 
 [This course](https://www.coursera.org/course/secrets) is my favorite by far. Although it is "free" to take courses on Coursera, it costs time; you have to pick a few and give up the others. I take courses that are useful (such as statistics), fun (such as this one), or both (programming and math). I recommend this course, for it offers great fun, and broadens your horizon literally.

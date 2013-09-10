@@ -3,7 +3,7 @@ layout: post
 title: "中国汉字听写大会"
 description: "Chinese Characters Dictation"
 category: diary
-tags: Chinese
+tags: Chinese nonsense blog
 ---
 
 央视推出了一档节目，叫做[《中国汉字听写大会》](http://tv.cntv.cn/video/VSET100170338675/32e2049bc9df4ec0910fb23afaf2727d)，口号是“书写的民族传递，民族的未雨绸缪”。

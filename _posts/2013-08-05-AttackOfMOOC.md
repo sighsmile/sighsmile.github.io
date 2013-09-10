@@ -3,7 +3,7 @@ layout: post
 title: "大课崛起：MOOC时代，传统高校何去何从"
 description: "Translation of an article from The Economist"
 category: translation
-tags: translation, MOOC, Coursera, Udacity, edX
+tags: translation MOOC Coursera Udacity edX
 ---
 
 

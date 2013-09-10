@@ -3,7 +3,7 @@ layout: post
 title: "前日就医小记"
 description: "pain in neck"
 category: diary
-tags: nonsense
+tags: nonsense blog
 ---
 
 近来头晕，闷痛，视力模糊，一直担心是颈椎旧伤的问题，拖着不去医院。真是名副其实的“pain in the neck”。上周终于难受得忍不住，网上预约挂号，跟疑似强直加重的友人一起去拍了几张片子。
