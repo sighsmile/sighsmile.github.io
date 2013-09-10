@@ -8,11 +8,11 @@ tags: reading book fairytale
 
 一直喜欢阅读儿童文学作品。
 
-近期，一鼓作气读完Diana Wynne Jones的Howl三部曲：（*Howl's Moving Castle*, *Castle in the Air*, *House of Many Ways*），又读完E. B. White的三本童话（*Charlotte's Web*, *Stuart Little*, *The Trumpet of the Swan*）。
+近期，一鼓作气读完Diana Wynne Jones的Howl三部曲（*Howl's Moving Castle*, *Castle in the Air*, *House of Many Ways*），又读完E. B. White的三本童话（*Charlotte's Web*, *Stuart Little*, *The Trumpet of the Swan*）。
 
 痛快。
 
-E. B. White的文笔自是没的说。最爱看他的动词，一气呵成，流畅灵活，不单调，不卖弄，平常中富有趣味。
+E. B. White的文笔自是没的说。最爱看他的简单句中的动词，一气呵成，流畅灵活，不单调，不卖弄，平常中富有趣味。
 
 *Charlotte's Web*以不可能之事感人，结局带着淡淡的悲伤和诗意。我以为是这三部中最好的作品，年岁越长，或许读来越有味道。谁不希望有一个truly devoted friend呢。
 
