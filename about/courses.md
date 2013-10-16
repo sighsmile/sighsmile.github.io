@@ -43,7 +43,7 @@ Courses finished with certificates: 10
 
 - [*Crafting an Effective Writer: Tools of the Trade*](https://www.coursera.org/course/basicwriting), May 2013, Mt. San Jacinto College
 
-![Coursera_Records](/about/Coursera.png)
+![Coursera_Records](/assets/Coursera.png)
 
 ---
 
