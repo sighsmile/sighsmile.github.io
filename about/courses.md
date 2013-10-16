@@ -26,6 +26,9 @@ Courses finished with certificates: 10
 
 ####Finance, Social Science & Others
 
+- [*From the Big Bang to Dark Energy*](https://www.coursera.org/course/bigbang), Sep 2013, Tokyo University
+	> *Well-presented lectures on a challenging subject. Now I am even able to talk about 2013 Nobel Prize in Physics -- yes, Higgs Boson is so important!*
+
 - [*Introduction to Finance*](https://www.coursera.org/course/introfinance), June 2013, University of Michigan
 
 - [*Model Thinking*](https://www.coursera.org/course/modelthinking), June 2013, University of Michigan
@@ -39,6 +42,8 @@ Courses finished with certificates: 10
 	>*Fascinating introduction to archaeology. As an archaeologist, Sue is so friendly, witty and enthusiastic!*
 
 - [*Crafting an Effective Writer: Tools of the Trade*](https://www.coursera.org/course/basicwriting), May 2013, Mt. San Jacinto College
+
+![Coursera_Records](/about/Coursera.png)
 
 ---
 
