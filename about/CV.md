@@ -4,10 +4,10 @@ layout: page
 comments: no
 ---
 
-**Caution: This site is under construction. [PDF version](/about/CharleneSui-CV.pdf) not available now...**
-
----
 *I'm not actively looking for employment, but I'm open to new challenges.*
+
+Please contact me at:   
+![Gmail](http://chart.apis.google.com/chart?cht=tx&chl=\text{pkuscn\spadesuit%20gmail.com})
 
 ---
 
@@ -18,12 +18,13 @@ It is never too late to learn -- if you don't stay up till the small hours every
 
 [Full list of courses](/about/courses)
 
-###[Coursera](http://www.coursera.org), since 2013
-Statements of Accomplishment: 10
-
+###[Coursera](https://www.coursera.org/user/i/ff6fdd8678c94f758ea0c7ed383a92cb), since 2013
+Statements of Accomplishment: 13  
+Self-motivated learner, focusing on mathematics, holding interests in various areas. 
 
 ###[Peking University](http://english.pku.edu.cn/), 2008 - 2012
-B.Sc. in Chemistry. Honors Student. 
+B.Sc. in Chemistry. Honors Student.   
+Top 1% (76/408071) in College Entrance Examination, 2008. 
 
 - Mathematics
 	- 8 courses in calculus, algebra, geometry and probability theory

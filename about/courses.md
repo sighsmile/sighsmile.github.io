@@ -5,17 +5,20 @@ comments: no
 ---
 
 ##[Coursera](http://www.coursera.org), 2013 - Present
-Courses finished with certificates: 10
+Courses finished with certificates: 13
 
 ####Mathematics, Statistics & Data Analysis
 
 - [*Case-Based Introduction to Biostatistics*](https://www.coursera.org/course/casebasedbiostat), July 2013, Johns Hopkins University
 
 - [*Mathematical Biostatistics Boot Camp 1*](https://class.coursera.org/course/biostats-003), July 2013, Johns Hopkins University
+> *A bit challenging, but I'll continue Boot Camp 2 after learning R!*
 
 - [*Calculus: Single Variable*](https://www.coursera.org/course/calcsing), May 2013, University of Pennsylvania
 	
 	> *Awesome animation and illustration. Challenging but enlightening.*
+
+- [*Introduction to Mathematical Philosophy*](https://www.coursera.org/course/mathphil), July 2013, Ludwig-Maximilians-Universität München 
 
 ####Computer Science
 
@@ -24,7 +27,9 @@ Courses finished with certificates: 10
 - [*Internet History, Technology, and Security*](https://www.coursera.org/course/insidetheinternet), June 2013, University of Michigan
 	> *Great course with extensive content. Loved those interesting videos. Thanks for sharing with us, Dr. Chuck!*
 
-####Finance, Social Science & Others
+- [*Learn to Program: The Fundamentals*](https://www.coursera.org/course/programming1) (Python), Aug 2013, University of Toronto
+
+####Others
 
 - [*From the Big Bang to Dark Energy*](https://www.coursera.org/course/bigbang), Sep 2013, Tokyo University
 	> *Well-presented lectures on a challenging subject. Now I am even able to talk about 2013 Nobel Prize in Physics -- yes, Higgs Boson is so important!*
@@ -58,10 +63,11 @@ Courses finished with certificates: 10
 - *Probability Theory*
 
 ####Computer Science
-- *Introduction to Computation(C++)*, *Data Structure and Algorithm(C/C++)*
+- *Introduction to Computation* (C++)
+- *Data Structure and Algorithm* (C/C++)
 - *Chemistry Information Retrieval*
 
 ####Chemistry (selected courses)
-- with lab sessions: *General Chemistry*, *Quantitative Analysis*, *Instrumental Analysis*, *Comprehensive Analytical Chemistry*, *Organic Chemistry 1&2*, *Comprehensive Organic Chemistry*, *Physical Chemistry*, *Comprehensive Physical Chemistry*, *Chemical Engineering*, *Comprehensive Experiments (Student Project)*
-- without lab sessions: *Structural Chemistry*, *Applied Chemistry*, *Inorganic Chemistry*, *Chromatography*, *Radiochemistry*, *Organic Spectroscopy*, *Polymer Chemistry*, *Material Chemistry*, *Life Chemistry (Biochemistry)*       
-     
+- with lab sessions: *General Chemistry*, *Quantitative Analysis*, *Instrumental Analysis*, *Comprehensive Analytical Chemistry*, *Organic Chemistry 1&2*, *Comprehensive Organic Chemistry*, *Physical Chemistry*, *Comprehensive Physical Chemistry*, *Chemical Engineering*
+- without lab sessions: *Structural Chemistry*, *Applied Chemistry*, *Inorganic Chemistry*, *Chromatography*, *Radiochemistry*, *Organic Spectroscopy*, *Polymer Chemistry*, *Material Chemistry*, *Biochemistry*       
+- Student Project: *Comprehensive Experiments*
