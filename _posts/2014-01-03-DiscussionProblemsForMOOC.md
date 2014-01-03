@@ -7,11 +7,11 @@ tags: Coursera MOOC education translation
 ---
 
 
->原文见[MIT Technology Review](http://www.technologyreview.com/view/522816/data-mining-exposes-embarrassing-problems-for-massive-open-online-courses/)。原标题为*Data Mining Exposes Embarrassing Problems for Massive Open Online Courses*。
+>按：原文见[MIT Technology Review](http://www.technologyreview.com/view/522816/data-mining-exposes-embarrassing-problems-for-massive-open-online-courses/)。原标题为*Data Mining Exposes Embarrassing Problems for Massive Open Online Courses*。
 
 >这确实是一个独特的切入点，译者在使用讨论区时也有类似感受：讨论最热闹的帖子往往是自我介绍、感谢老师之类。传染病学等课程将发帖数作为评分标准之一，大概也考虑到了这方面的问题，然而这反而恶化了信息过载的程度。
 
->让SPOC来得更猛烈吧！
+>不如让SPOC来得更猛烈吧！
 
 
 ###透过数据看MOOC讨论区：每况愈下，大势不妙
@@ -31,13 +31,13 @@ tags: Coursera MOOC education translation
 
 面对这一结果，拥护“美丽教育新世界”的人们不禁开始反思。有两个问题亟待大家解答：是哪里出了问题？应该如何解决？
 
-今天，普林斯顿大爷的Christopher Brinton等人发表了他们的观点。他们研究了MOOC在线讨论区内逾十万名选课学生的行为。
+今天，普林斯顿大学的Christopher Brinton等人发表了他们的观点。他们研究了MOOC在线讨论区内逾十万名选课学生的行为。
 
 结果令人失望。他们发现，随着课程持续，讨论区参与度一直在急剧下滑，几乎半数选课学生发帖不超过两次。另外，即便教师参与在线讨论，依然无济于事。反而有证据表明，这其实会导致参与度下滑更快。
 
 Brinton等人研究了Coursera上73门课程的讨论区发帖情况。此研究总共涉及115,000名学生，主题帖超过170,000，总发帖数超过800,000。研究小组描点作图，描绘出讨论数量随课程进展的变化形势，并总结出这一下降走势的相关因素。
 
-Briton等人称，他们发现了许多与讨论区热度下降相关的因素。例如课程中同学互评作业的布置数量就是其一，该因素会导致前述下降速度小幅加快。更值得担忧的问题是，他们发现教师参与一个主题帖似乎同样会加速讨论数下滑（尽管它也会导致回帖数目增加）。
+Briton等人称，他们发现了许多与讨论区热度下降相关的因素。例如课程中同学互评作业的布置数量就是其一，该因素会导致前述下降速度小幅加快。更值得担忧的问题是，他们发现教师参与一个主题帖似乎同样会加速讨论总数下滑（尽管它也会导致回帖数目增加）。
 
 如何扭转这一趋势？目前尚无明确解决方案，不过或可考虑设法让学生更容易找到最有价值的讨论帖，从而改善他们的学习体验。
 
