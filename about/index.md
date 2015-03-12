@@ -6,8 +6,9 @@ comments: no
 
 This blog is written by [Charlie](/about/CV):
 
+- A graduate student in translation and computer science
 - A self-motivated student in [online courses](/about/CV#education)
-- A freelance translator who has a day-time job as a technical editor
+- A freelance translator
 - A math lover who enjoys popular science (and hopes to be admitted in a math PhD program)
 - A [not-so-multilingual learner](/about/CV#languages) who has some knowledge of English/Japanese/Python, and is learning French/German/Cantonese/Racket/C++ 
 
