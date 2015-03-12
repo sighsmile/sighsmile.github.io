@@ -1,10 +1,10 @@
 ---
-title: Charlene's CV
+title: CV
 layout: page
 comments: no
 ---
 
-*I'm not actively looking for employment, but I'm open to new challenges.*
+*Not actively looking for employment, but always open to new challenges.*
 
 Please contact me at:   
 ![Gmail](http://chart.apis.google.com/chart?cht=tx&chl=\text{pkuscn\spadesuit%20gmail.com})
@@ -13,18 +13,20 @@ Please contact me at:
 
 #Education & Training <a id="education"></a>
    
-*Confucius once said, "If I hear the Way [of truth] in the morning, I am content even to die in that evening." 
-It is never too late to learn -- if you don't stay up till the small hours every time.* 
+> If I hear the Way [of truth] in the morning, I am content even to die in that evening. -- Confucius
 
 [Full list of courses](/about/courses)
 
 ###[Coursera](https://www.coursera.org/user/i/ff6fdd8678c94f758ea0c7ed383a92cb), since 2013
-Statements of Accomplishment: 13  
+Statements of Accomplishment: 43  
 Self-motivated learner, focusing on mathematics, holding interests in various areas. 
 
-###[Peking University](http://english.pku.edu.cn/), 2008 - 2012
+###[Peking University](http://www.pku.edu.cn/), 2015 - 2017 (expected)
+M.Eng. in Computer Technology.
+
+###[Peking University](http://www.pku.edu.cn/), 2008 - 2012
 B.Sc. in Chemistry. Honors Student.   
-Top 1% (76/408071) in College Entrance Examination, 2008. 
+Top 1% in College Entrance Examination, 2008. 
 
 - Mathematics
 	- 8 courses in calculus, algebra, geometry and probability theory
