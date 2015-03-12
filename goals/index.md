@@ -8,16 +8,17 @@ comments: no
 - All books by Martin Gardner.
 
 ### Languages
-- Take TOEFL and IELTS tests.
+- Take TOEFL, GRE, and JLPT N1 tests.
 - Learn **French** through Reflets or with [AFChine](http://www.afchine.org/). 
 - Program using **Python**, and make a game or other types of small projects.
 - Learn German/Swedish.
 
 ### Courses & Projects
-- Finish math courses on Coursera, edX and Udacity.
+- NLP and ML courses.
+- Write an interactive fiction with Inform.
+- Solve all problems on [Project Euler](https://projecteuler.net).
 
 ### Life
 - Learn swimming -- any style is fine. 
 - Get admission into a math PhD program. 
 - Travel in Japan. 
-- Buy a digital piano and start playing again.
