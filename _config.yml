@@ -1,8 +1,7 @@
 permalink: /:year-:month-:day-:title/
 url: http://sighsmile.github.io
 author: sighsmile
-pygments: true
 safe: true
 paginate: 16
 auto: true
-
+highlighter: 'rouge'
