@@ -1,9 +1,6 @@
 ---
 layout: post
 title: "用 Python 和 Stanford CoreNLP 进行中文自然语言处理"
-description: ""
-category: diary
-tags: education PKU Coursera MOOC blog
 ---
 
 
