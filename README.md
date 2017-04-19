@@ -1,2 +1,4 @@
-My blog on github, modified from webfrogs's template.
+My blog on github.
+
+
 
