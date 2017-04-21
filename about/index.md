@@ -4,7 +4,13 @@ layout: page
 comments: no
 ---
 
-A graduate student from Peking University, expected to graduate by summer 2018.
+[LinkedIn](https://www.linkedin.com/in/suicn/)
 
-Contact me on [LinkedIn](https://www.linkedin.com/in/suicn/).
+Open course learner.
+
+Peking University, 2015 - 2018 (expected), MEng in Computer Technology.
+
+Peking University, 2008 - 2012, BSc in Chemistry.
+
+
 
