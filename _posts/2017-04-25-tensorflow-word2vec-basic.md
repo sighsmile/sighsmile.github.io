@@ -58,16 +58,18 @@ Vector Space* [[pdf](https://arxiv.org/pdf/1301.3781.pdf)]，进一步的优化�
 
 在 embedding 层中，首先对全体词向量随机初始化。示例代码是 skip-gram 模型，每次对训练数据只需用 tf.nn.embedding_lookup() 查表即可。如果改写成 CBOW 模型，那么输入向量是上下文窗口词的词向量的简单平均，因此只需要在前者的基础上增加一步 tf.reduce_mean()。
 
-通常情况下，在类似的模型中，我们的优化原则是 maximum likelyhood (ML)。给定之前的若干个词 $h$，预测下一个词是 $w_t$ 的概率
+通常情况下，在类似的模型中，我们的优化原则是 maximum likelyhood (ML)。给定之前的若干个词 \( h \)，预测下一个词是 \(w_t\) 的概率
 $$ \begin{align} P(w_t | h) &= \text{softmax} (\text{score} (w_t, h)) \\ &= \frac{\exp \{ \text{score} (w_t, h) \} } {\sum_\text{Word w' in Vocab} \exp \{ \text{score} (w', h) \} } \end{align} $$
 
 优化目标是使训练集中的（正）样本的 log-likelihood 最大化，即
 $$ \begin{align} J_\text{ML} &= \log P(w_t | h) \\ &= \text{score} (w_t, h) - \log \left( \sum_\text{Word w' in Vocab} \exp \{ \text{score} (w', h) \} \right) \end{align} $$
+
 但是这样计算代价很高，每一步都需要对所有词计算。
 
-为了提升训练效率，引入负采样（negative sampling）策略，不再用 softmax 对所有词计算概率，而是简化为用 logistic regression 做二元分类。正例是语料中真实的目标词 $w_t$，负例是语料中在该窗口没有出现过的 $k$ 个其他词 $\tilde w$。从而，优化目标就转化为
+为了提升训练效率，引入负采样（negative sampling）策略，不再用 softmax 对所有词计算概率，而是简化为用 logistic regression 做二元分类。正例是语料中真实的目标词 \(w_t\)，负例是语料中在该窗口没有出现过的 \(k\) 个其他词 \(\tilde w\)。从而，优化目标就转化为
 $$J_\text{NEG} = \log Q_\theta(D=1 |w_t, h) + k \mathop{\mathbb{E}}_{\tilde w \sim P_\text{noise}} \left[ \log Q_\theta(D = 0 |\tilde w, h) \right]$$
-这样一来，每一步不再需要计算所有词，而只需要计算选出来的这 $k$ 个负例即可。这里使用 tensorflow 自带的 nce_loss() 来近似实现这一策略，它会自动选取负样本。
+
+这样一来，每一步不再需要计算所有词，而只需要计算选出来的这 \(k\) 个负例即可。这里使用 tensorflow 自带的 nce_loss() 来近似实现这一策略，它会自动选取负样本。
 
 另外，为了在训练过程中观察效果，随机选取若干个高频词构成验证集，每隔一段时间，列出与它们余弦距离最近的前几个词，观察这些词在语义上与它们是否相近。一开始是随机初始化的，如果训练有效，最终应该会列出它们的近义词（语义功能类似的词）。
 
@@ -140,7 +142,7 @@ Nearest to four: six, five, seven, eight, three, nine, two, zero,
 $$ P(w_i) = 1 - \sqrt{\frac{t}{f(w_i)}} $$
 从而，虽然不改变词频高低顺序，但大幅减少超高频词（如the和of等）的干扰，改善模型对低频词的表达能力。
 
-在原始论文中，每个词都对应两个向量，分别用作输入和输出。按照 [CS224N](web.stanford.edu/class/cs224n/) 课程的记号，用 o 表示输出词（索引），c 表示中心词（索引），$v$ 表示输入向量，$u$ 表示输出向量，那么
+在原始论文中，每个词都对应两个向量，分别用作输入和输出。按照 [CS224N](web.stanford.edu/class/cs224n/) 课程的记号，用 o 表示输出词（索引），c 表示中心词（索引），\( v \) 表示输入向量，\(u\) 表示输出向量，那么
 $$ \begin{align} P(o | c) &= \text{softmax} (u_o^T v_c) \\ &= \frac{\exp (u_o^T v_c)} {\sum_\text{Word w in Vocab} \exp (u_w^T v_c) } \end{align} $$
 
 其中，输入向量就是本文模型中的 embedding 层，也就是本文最终训练得到的向量。关于原理和实现的细节，参见 [CS224N 的第一次作业](http://web.stanford.edu/class/cs224n/assignment1/index.html)。
