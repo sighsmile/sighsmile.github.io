@@ -6,6 +6,9 @@ category:
 tags:
 ---
 
+**更新：经测试，以管理员身份运行Atom即可在编辑器内直接安装插件，无需手动下载安装。**
+
+
 最近开始使用Atom编辑器写作。为了预览带LaTeX公式的markdown文档，尝试安装插件markdown-preview-plus，但是总是失败。经过仔细查看错误输出和网上相关问答，发现尽管报错为`Compiler tools not found`，真实原因其实是网络不通畅（GFW）。由于无法使用代理上网，最后只能手动安装完成，摸索过程记录如下。
 
 简单摘要：从github下载并手动安装插件；用nrm测试和切换npm源；用npm-install-missing批量安装模块。
