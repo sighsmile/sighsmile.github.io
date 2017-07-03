@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Geohash 原理及 Python 实现"
+title: "面试题之 atoi 实现"
 description: ""
 category:
 tags:
