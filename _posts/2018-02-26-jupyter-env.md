@@ -23,11 +23,11 @@ dependencies:
 ```conda env create -f ml3.yml```
 ```activate ml3```
 
-在服务器端托管，避免掉线
+（在服务器端做各种事情之前可以先托管，避免掉线
 
 ```tmux```
 
-(重新登录以后，输入`tmux attach`就可以重连。输入`tmux detach`则脱离。）
+重新登录以后，输入`tmux list-sessions`可以查看运行状况，`tmux attach -t [session-id]`就可以重连，`tmux detach`则脱离。）
 
 现在可以做各种事情，比如开启 jupyter notebook
 
