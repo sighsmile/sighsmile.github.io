@@ -6,11 +6,15 @@ comments: no
 
 [LinkedIn](https://www.linkedin.com/in/suicn/)
 
-Open course learner.
+## Education
 
-Peking University, 2015 - 2018 (expected), MEng in Computer Technology.
+2015 - 2018. MEng in Computer Technology. 
 
-Peking University, 2008 - 2012, BSc in Chemistry.
+2008 - 2012. BSc in Chemistry. 
 
+## Work Experience
 
+2017 - Now. NLP software developer. 
+
+2012 - 2015. Translator.
 
