@@ -237,7 +237,9 @@ $$\frac{\partial J}{\partial X} = \mathrm{conv2d}(\mathrm{input}=\frac{\partial 
 
 其中 $W_{reverse}$ 是将 $W$ 旋转 180 度，或者说是将 $W$ 的各行、各列元素逆序。
 
-不难理解为什么要将 $W$ 的元素逆序排列。在计算卷积的时候，除了边缘以外， $Y$ 中的每个元素 $y_{i,j}$ 都受到 $X$ 的 $3 \times 3$ 个元素的影响，即 $x_{i',j'} $，其中 $|i'-i| \leq 1, |j'-j| \leq 1$；这正是由卷积 kernel 定义的感受野。反过来思考，$X$ 中的每个元素 $x_{i,j}$ 也一样影响 $Y$ 中的 $3 \times 3$ 区域的元素，即 $y_{i',j'} $，其中 $|i'-i| \leq 1, |j'-j| \leq 1$。既然 kernel 是从左到右、从上到下地滑过 $X$，也就是说 $X$ 中的每一元素是从右到左、从下到上地与 kernel 中的元素相结合。因此计算 $\frac{\partial J}{\partial X}$ 时，会用到 $W_{reverse}$。
+不难理解为什么要将 $W$ 的元素逆序排列。在计算卷积的时候，除了边缘以外， $Y$ 中的每个元素 $y_{i,j}$ 都受到 $X$ 的 $3 \times 3$ 个元素的影响，即 $x_{i',j'}$，其中 $\lvert{i'-i}\rvert \leq 1, \lvert{j'-j}\rvert \leq 1$；这正是由卷积 kernel 定义的感受野。
+
+反过来思考，$X$ 中的每个元素 $x_{i,j}$ 也一样影响 $Y$ 中的 $3 \times 3$ 区域的元素，即 $y_{i',j'} $，其中 $\lvert{i'-i}\rvert \leq 1, \lvert{j'-j}\rvert \leq 1$。既然 kernel 是从左到右、从上到下地滑过 $X$，也就是说 $X$ 中的每一元素是从右到左、从下到上地与 kernel 中的元素相结合。因此计算 $\frac{\partial J}{\partial X}$ 时，会用到 $W_{reverse}$。
 
 由上面的推导可见，卷积的反向传播函数也是卷积操作。
 
