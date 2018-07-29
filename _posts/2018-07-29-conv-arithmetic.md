@@ -79,6 +79,7 @@ tags:
 考虑二维卷积，$p = 0$，$ s = 1$。
 
 设 kernel 为 $3 \times 3$ 数组
+
 $$W = \begin{pmatrix}
   w_{0,0} & w_{0,1} & w_{0,2} \\
   w_{1,0} & w_{1,1} & w_{1,2} \\
@@ -86,6 +87,7 @@ $$W = \begin{pmatrix}
  \end{pmatrix}$$
 
 输入 feature map 为 $4 \times 4$ 的数组
+
 $$ X = \begin{pmatrix}
   x_{0,0} & x_{0,1} & x_{0,2} & x_{0,3}\\
   x_{1,0} & x_{1,1} & x_{1,2} & x_{1,3}\\
@@ -94,9 +96,11 @@ $$ X = \begin{pmatrix}
  \end{pmatrix}$$ 
 
 将输入展平为一维列向量 
+
 $$ X_{flat} = (x_{0, 0}, x_{0, 1}, x_{0, 2}, x_{0, 3}, x_{1, 0}, \cdots, x_{3,3})^T$$
 
 记卷积结果为 $Y$ 并按照相同顺序展平为一维向量，根据卷积定义可以直接写出 
+
 $$ Y_{flat} = \begin{pmatrix}
   w_{0,0}x_{0,0} + w_{0,1}x_{0,1} + w_{0,2}x_{0,2} + 
   w_{1,0}x_{1,0} + w_{1,1}x_{1,1} + w_{1,2}x_{1,2} +
@@ -148,7 +152,9 @@ $$Y_{flat}^T = \begin{pmatrix}
 ### 卷积的梯度计算
 
 定义函数 conv2d(input, kernel, pad, stride)。沿用前面的记号，有 
+
 $$Y = \mathrm{conv2d}(\mathrm{input}=X, \mathrm{kernel}=W, \mathrm{pad}=0, \mathrm{stride}=1)$$
+
 其中 $X$、$W$、$Y$ 分别为 $4 \times 4$、$3\times 3$、$2 \times 2$ 矩阵。
 
 设 $J$ 为损失函数，下面求梯度 $\frac{\partial J}{\partial W}$ 和 $\frac{\partial J}{\partial X}$。 
@@ -161,6 +167,7 @@ $$\frac{\partial J}{\partial w_{00}} =
 \frac{\partial J}{\partial y_{11}} x_{11}$$
 
 同样可以求出
+
 $$\frac{\partial J}{\partial w_{01}} = 
 \frac{\partial J}{\partial y_{00}} x_{01} + 
 \frac{\partial J}{\partial y_{01}} x_{02} + 
@@ -180,13 +187,16 @@ $$\frac{\partial J}{\partial w_{10}} =
 \frac{\partial J}{\partial y_{11}} x_{21}$$
 
 以下省略。将它们代入
+
 $$\frac{\partial J}{\partial W} = 
 \begin{pmatrix}
 \frac{\partial J}{\partial w_{00}} & \frac{\partial J}{\partial w_{10}} & \frac{\partial J}{\partial w_{20}}\\
 \frac{\partial J}{\partial w_{01}} & \frac{\partial J}{\partial w_{11}} & \frac{\partial J}{\partial w_{21}}\\
 \frac{\partial J}{\partial w_{02}} & \frac{\partial J}{\partial w_{12}} & \frac{\partial J}{\partial w_{22}}
 \end{pmatrix}$$
+
 容易看出实际上就是
+
 $$\frac{\partial J}{\partial W} = \mathrm{conv2d}(
 \mathrm{input} = \begin{pmatrix}
 x_{0,0} & x_{0,1} & x_{0,2} & x_{0,3}\\
@@ -199,11 +209,15 @@ x_{0,0} & x_{0,1} & x_{0,2} & x_{0,3}\\
 \frac{\partial J}{\partial y_{01}} & \frac{\partial J}{\partial y_{11}}
 \end{pmatrix}, 
 \mathrm{pad}=0, \mathrm{stride}=1)$$
-即 $$\frac{\partial J}{\partial W} = \mathrm{conv2d}(\mathrm{input} = X, \mathrm{kernel}=\frac{\partial J}{\partial Y}, \mathrm{pad}=0, \mathrm{stride}=1)$$
 
-这里的 gradient matrix 采用了 numerator layout 的记法。关于矩阵求导及其 numerator layout，见另一篇 post。
+即 
+
+$$\frac{\partial J}{\partial W} = \mathrm{conv2d}(\mathrm{input} = X, \mathrm{kernel}=\frac{\partial J}{\partial Y}, \mathrm{pad}=0, \mathrm{stride}=1)$$
+
+这里的 gradient matrix 采用了 numerator layout 的记法。关于矩阵求导及其 numerator layout，见[前一篇文章](http://sighsmile.github.io/2018-07-28-matrix-calculus/)。
 
 再对 $X$ 的每个元素类似计算，可得
+
 $$ 
 \frac{\partial J}{\partial X} = \mathrm{conv2d}(
 \mathrm{input}= \begin{pmatrix}
@@ -216,7 +230,11 @@ w_{1,2} & w_{1,1} & w_{1,0}\\
 w_{0,2} & w_{0,1} & w_{0,0}
 \end{pmatrix},
 \mathrm{pad}=\mathrm{full}, \mathrm{stride}=1)$$
-即 $$\frac{\partial J}{\partial X} = \mathrm{conv2d}(\mathrm{input}=\frac{\partial J}{\partial W}, \mathrm{kernel}=W_{reverse}, \mathrm{pad}=\mathrm{full}, \mathrm{stride}=1)$$
+
+即 
+
+$$\frac{\partial J}{\partial X} = \mathrm{conv2d}(\mathrm{input}=\frac{\partial J}{\partial W}, \mathrm{kernel}=W_{reverse}, \mathrm{pad}=\mathrm{full}, \mathrm{stride}=1)$$
+
 其中 $W_{reverse}$ 是将 $W$ 旋转 180 度，或者说是将 $W$ 的各行、各列元素逆序。
 
 不难理解为什么要将 $W$ 的元素逆序排列。在计算卷积的时候，除了边缘以外， $Y$ 中的每个元素 $y_{i,j}$ 都受到 $X$ 的 $3 \times 3$ 个元素的影响，即 $x_{i',j'} $，其中 $|i'-i| \leq 1, |j'-j| \leq 1$；这正是由卷积 kernel 定义的感受野。反过来思考，$X$ 中的每个元素 $x_{i,j}$ 也一样影响 $Y$ 中的 $3 \times 3$ 区域的元素，即 $y_{i',j'} $，其中 $|i'-i| \leq 1, |j'-j| \leq 1$。既然 kernel 是从左到右、从上到下地滑过 $X$，也就是说 $X$ 中的每一元素是从右到左、从下到上地与 kernel 中的元素相结合。因此计算 $\frac{\partial J}{\partial X}$ 时，会用到 $W_{reverse}$。
@@ -312,7 +330,9 @@ w_{0,2} & w_{0,1} & w_{0,0}
 前面已经推导过，卷积的反向传播也是卷积；原始 kernel 旋转 180 度就是反向传播中的 kernel，因而反卷积也被称为转置卷积（transposed convolution）。再次强调，这里所谓的反卷积并不是卷积的逆运算。
 
 设第 $k$ 个卷积层的 kernel 为 $W^{(k)}$，输入数组为 $X^{(k-1)}$，卷积输出数组为 $Y^{(k)}$，经过池化和激活函数之后的数组为 $X^{(k)}$，即下一层的输入。那么有
+
 $$Y^{(k)} = \mathrm{conv2d}(X^{(k-1)}, W^{(k)})$$
+
 $$\frac{\partial J}{\partial X^{(k)}} = \mathrm{conv2d}(\frac{\partial J}{\partial Y^{(k)}}, W_{\mathrm{reverse}}^{(k)})$$
 
 因而相应的反卷积层的 kernel 为 $W_{\mathrm{reverse}}^{(k)}$，反卷积的输入为 $\frac{\partial J}{\partial Y^{(k)}}$，输出为 $\frac{\partial J}{\partial X^{(k)}}$。因此，这个反卷积层结构能够展示出损失函数对各层输入的导数，即每一层的每一个 kernel 分别是被哪些输入信号激活了，识别出了哪些特征，从而对卷积神经网络的建模能力进行可视化。
