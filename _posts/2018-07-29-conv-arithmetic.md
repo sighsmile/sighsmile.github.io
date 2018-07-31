@@ -295,8 +295,8 @@ $$\frac{\partial J}{\partial X} = \mathrm{conv2d}(\mathrm{input}=\frac{\partial 
   width="150" title="Convolution, no padding, no strides"/>
   </td>
   <td>
-  <img src="../assets/no_padding_strides_transposed.gif" 
-  width="150" title="Deconvolution, no padding, strides"/>
+  <img src="../assets/no_padding_no_strides_transposed.gif" 
+  width="150" title="Deconvolution, no padding, no strides"/>
   </td>
 </tr>
 <tr>
