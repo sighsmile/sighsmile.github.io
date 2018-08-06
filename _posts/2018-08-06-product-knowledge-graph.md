@@ -16,28 +16,32 @@ Xin Luna Dong 在 KBCOM 2018、SigKDD 2018 等会议上的演讲 *Challenges and
 
 知识图谱我们已经很熟悉，是以实体为顶点、关系为边构成的有向图，实体具有实体类型。知识图谱在搜索引擎、个人助理等领域用途很大。
 
-产品图谱的使命是回答关于产品和相关知识的一切问题。产品图谱和通用图谱不是互相包含的关系，但是两者在影视、音乐、图书等领域有部分重合。
+产品图谱的使命是回答关于产品和相关知识的一切问题。
 
 <div align="center"><figure>
   <img src="../assets/movie_knowledge_graph.png" 
-  width=600
+  width="480"
   title="movie-knowledge-graph"/>
   <figcaption>电影知识图谱</figcaption>
 </figure></div>
 
+
 <div align="center"><figure>
   <img src="../assets/movie_product_graph.png" 
-  width=600
+  width="480"
   title="movie-product-graph"/>
   <figcaption>电影产品图谱</figcaption>
 </figure></div>
 
+产品图谱和通用图谱不是互相包含的关系，但是两者在影视、音乐、图书等领域有部分重合。
+
 <div align="center"><figure>
   <img src="../assets/knowledge_vs_product_graph.png" 
-  width=240
+  width="240"
   title="knowledge-vs-product-graph"/>
   <figcaption>知识图谱与产品图谱的关系</figcaption>
 </figure></div>
+
 
 ## 建立产品图谱有哪些困难之处？
 
@@ -62,7 +66,8 @@ Xin Luna Dong 在 KBCOM 2018、SigKDD 2018 等会议上的演讲 *Challenges and
 整个产品图谱架构分为图谱构建和图谱应用两大块。图谱构建部分又分为知识收集、知识清洗两部分。
 
 <div align="center"><figure>
-  <img src="../assets/product_graph_architecture.png" width=600
+  <img src="../assets/product_graph_architecture.png"
+  width="480"
   title="product-graph-architecture"/>
   <figcaption>产品图谱架构</figcaption>
 </figure></div>
@@ -81,7 +86,7 @@ Xin Luna Dong 在 KBCOM 2018、SigKDD 2018 等会议上的演讲 *Challenges and
 
 <div align="center"><figure>
   <img src="../assets/deep_knowledge_embedding_model.png" 
-  width=600
+  width="480"
   title="deep-knowledge-embedding-model"/>
   <figcaption>深度知识模型</figcaption>
 </figure></div>
