@@ -20,12 +20,14 @@ Xin Luna Dong 在 KBCOM 2018、SigKDD 2018 等会议上的演讲 *Challenges and
 
 <div align="center"><figure>
   <img src="../assets/movie_knowledge_graph.png" 
+  width=600
   title="movie-knowledge-graph"/>
   <figcaption>电影知识图谱</figcaption>
 </figure></div>
 
 <div align="center"><figure>
   <img src="../assets/movie_product_graph.png" 
+  width=600
   title="movie-product-graph"/>
   <figcaption>电影产品图谱</figcaption>
 </figure></div>
@@ -60,7 +62,7 @@ Xin Luna Dong 在 KBCOM 2018、SigKDD 2018 等会议上的演讲 *Challenges and
 整个产品图谱架构分为图谱构建和图谱应用两大块。图谱构建部分又分为知识收集、知识清洗两部分。
 
 <div align="center"><figure>
-  <img src="../assets/product_graph_architecture.png" 
+  <img src="../assets/product_graph_architecture.png" width=600
   title="product-graph-architecture"/>
   <figcaption>产品图谱架构</figcaption>
 </figure></div>
@@ -79,6 +81,7 @@ Xin Luna Dong 在 KBCOM 2018、SigKDD 2018 等会议上的演讲 *Challenges and
 
 <div align="center"><figure>
   <img src="../assets/deep_knowledge_embedding_model.png" 
+  width=600
   title="deep-knowledge-embedding-model"/>
   <figcaption>深度知识模型</figcaption>
 </figure></div>
