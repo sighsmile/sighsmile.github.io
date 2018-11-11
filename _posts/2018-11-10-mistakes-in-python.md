@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Python 新手容易踩的坑"
+description: ""
+category:
+tags:
+---
 
 根据 *How to Make Mistakes in Python* 一书，以及我自己的经验，总结了 Python 新手容易踩的坑。
 
