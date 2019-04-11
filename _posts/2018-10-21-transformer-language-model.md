@@ -177,7 +177,7 @@ $$L_3(\mathcal{C}) = L_2(\mathcal{C}) + \lambda L_1(\mathcal{C})$$
 这个任务的思路与 word2vec CBOW 相似，但是它不是一个词袋模型，而是一个能够捕捉顺序信息的深层序列模型，因此它比 word2vec 更慢、更复杂、但效果更好地实现了“基于上下文的分布式表示”。很多人看到 bidirectional Transformer，以为它像 bidirectional RNN 一样是显式的双向，这是不对的。它只是用了一个双向的目标函数，使模型中引入了两侧的信息。
 
 <div align="center"><figure>
-  <img src="../assets/BERT_architecture.png" 
+  <img src="../assets/BERT_architecture.PNG" 
   width="800" title="BERT architecture vs. OpenAI GPT vs. ELMo"/>
   <figcaption>BERT 模型与其他模型的对比，可见 BERT 是深层双向模型</figcaption>
 </figure></div>
