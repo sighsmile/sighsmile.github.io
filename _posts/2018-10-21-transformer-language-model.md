@@ -6,9 +6,11 @@ category:
 tags:
 ---
 
-最近双向的预训练语言模型 BERT 引起关注。它是单向预训练模型 OpenAI GPT 的改进，两者都基于 Transformer 模型。
+最近双向的预训练语言模型 BERT 引起关注。它是单向预训练模型 OpenAI GPT 的改进，两者都基于 Transformer 模型。本文介绍这三篇文章。
 
-本文介绍这三篇文章。
+首先解释一下什么是单向，什么是双向。所谓双向，我们都很熟悉 bidirectional RNN，是两个模型方向相反（或者说是原始序列分别正序和逆序输入），因此一个模型从前到后，一个模型从后到前，总的模型可以利用两个方向的信息；而单向 RNN 只有一个方向，只能利用上文的信息，或者说是某个时间点之前的历史信息。实质上，bi-RNN 模型有两个方向相反的模块，这只是显式的、结构上的双向模型；使用两侧的信息，才是真正的双向模型，但它并不一定要包括两个方向相反的模块。
+
+例如对序列做一维卷积，如果使用一个时序受限的 mask，使每个位置只能获得此前位置的信息，这就是单向模型；去掉这个 mask 的限制，模型就变成了双向模型。再比如词向量，如果只用前四个词去预测第五个词，这就是单向模型；如果用上下文四个窗口词去预测中间这个词，这其实就是双向模型。
 
 ## Transformer
 
@@ -141,7 +143,7 @@ $$h_0 = UW_e + W_p, \quad U = (u_{-k}, \dots, u_{-1})$$
 $$h_l = \text{transformer_block} (h_{l-1}), \quad l = 1, \ldots, n$$
 $$P(u) = \text{softmax}(h_nW_e^{\top})$$
 
-有必要指出，尽管 Transformer 模型是双向的，马尔可夫语言模型的目标函数是单向的，所以这个模型本质上还是单向的。
+有必要指出，尽管 Transformer 模型本身完全可以是双向的，例如之前的 encoder；但是，这里因为马尔可夫语言模型的目标函数是单向的，所以采用了单向的 Transformer decoder。所谓单向指的是，每个词都只关注左侧的上文而忽视右侧的下文。这表明，问题其实出在语言模型的目标函数上，因此为 BERT 引入填空任务埋下了伏笔。
 
 ### 有监督微调
 
@@ -172,7 +174,13 @@ $$L_3(\mathcal{C}) = L_2(\mathcal{C}) + \lambda L_1(\mathcal{C})$$
 
 之前已经注意到，Transformer 模型具有双向捕捉序列信息的能力，但马尔可夫多元组的目标函数使模型仍然局限在单向预测上。为了从无监督语料中获得双向的目标函数，引入填空任务：随机 mask 一部分词，从上下文预测原词。
 
-这个任务的思路与 word2vec CBOW 相似，但是它不是一个词袋模型，而是一个能够捕捉顺序信息的深层序列模型，因此它比 word2vec 更慢、更复杂、但效果更好地实现了“基于上下文的分布式表示”。
+这个任务的思路与 word2vec CBOW 相似，但是它不是一个词袋模型，而是一个能够捕捉顺序信息的深层序列模型，因此它比 word2vec 更慢、更复杂、但效果更好地实现了“基于上下文的分布式表示”。很多人看到 bidirectional Transformer，以为它像 bidirectional RNN 一样是显式的双向，这是不对的。它只是用了一个双向的目标函数，使模型中引入了两侧的信息。
+
+<div align="center"><figure>
+  <img src="../assets/BERT_architecture.png" 
+  width="800" title="BERT architecture vs. OpenAI GPT vs. ELMo"/>
+  <figcaption>BERT 模型与其他模型的对比，可见 BERT 是深层双向模型</figcaption>
+</figure></div>
 
 如果只是随机将 15% 单词替换为 [MASK] 并预测原词，该模型无法迁移到不包含 [MASK] 符的其他任务上。我们希望模型对每一个词都训练出基于上下文的表示，因此理想情况下，每个词都按照一定的分布出现在填空位置
 
@@ -219,4 +227,6 @@ $$P_i^{\text{start}} = \text{softmax}(e^{ST_i}) = \frac{e^{S \cdot T_i}}{\sum_j 
 $$P_i = \text{softmax}(e^{V \cdot C_i})= \frac{e^{V \cdot C_i}}{\sum_{j=1,2,3,4} e^{V \cdot C_j}}$$
 
 BERT 模型刷新了许多数据集的最高分，但是它的复现受到算力的限制。
+
+> 补充：官方 BERT 代码后来已经开放，见 https://github.com/google-research/bert
 
