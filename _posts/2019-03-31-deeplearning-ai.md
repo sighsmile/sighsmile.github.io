@@ -20,7 +20,7 @@ tags:
 
 假设有 $m$ 个训练样本，每个样本输入 $x^{(i)}$ 为 $n_X$ 维向量，输出 $y^{(i)}$ 为 0 或 1。将每个样本作为一个列向量，整个训练集 $X \in \mathbb{R} ^{n_X \times m}$，$Y \in \mathbb{R} ^{1 \times m}$。
 
-> 提醒：使用 numpy 要小心 1d array 可能有坑，建议统统 reshape(-1, 1) 或 reshape(1, -1) 以转化为 2d array。
+> 提醒：使用 numpy 要小心 1d array 可能有坑，建议统统 `reshape(-1, 1)` 或 `reshape(1, -1)` 以转化为 2d array。
 
 我们希望学习 $\hat{y} = p(y=1|x)$。采用 logistic regression 模型
 $$\hat{y} = \sigma (w ^ \top x + b)$$
@@ -30,7 +30,7 @@ $$\hat{y} = \sigma (w ^ \top x + b)$$
 $$\mathcal{L}(\hat{y}, y) = - (y \log \hat{y} + (1-y) \log (1- \hat{y}))$$
 $$J(w, b) = \frac{1}{m} \sum_{i=1, \ldots, m} \mathcal{L}(\hat{y}^{(i)}, y^{(i)})$$
 
-> 这个 cost 函数的动机是，由于 $p(y=1|x) = \hat{y}$，$p(y=0|x) = 1-\hat{y}$，两种情形等价于 $p(y|x) = \hat{y} ^y (1-\hat{y})^{1-y}$。
+这个 cost 函数的动机是，由于 $p(y=1|x) = \hat{y}$，$p(y=0|x) = 1-\hat{y}$，两种情形等价于 $p(y|x) = \hat{y} ^y (1-\hat{y})^{1-y}$。
 
 为了最小化 $J$，我们采用梯度下降法，对每个参数重复 $w \leftarrow w - \alpha \frac{\partial J}{\partial w}$，直到收敛（或者其他终止条件）。
 
