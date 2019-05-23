@@ -64,7 +64,7 @@ WSDM 2018 知识图谱 tutorial，标题为 Mining Knowledge Graphs from Text，
 
 大体分为两方面解决，第一步从文本抽取出知识，然后进一步构建出知识图谱。
 
-<table border="0">
+<table border="1">
 <tr>
 	<td></td>
 	<td>知识抽取（从文本到抽取图谱）</td>
@@ -117,7 +117,7 @@ WSDM 2018 知识图谱 tutorial，标题为 Mining Knowledge Graphs from Text，
 有监督方法标注代价高，无监督方法有语义漂移等缺点，半监督方法是两者之间的折中。
 
 
-<table border="0">
+<table border="1">
 <tr>
 	<td></td>
 	<td>有监督</td>
@@ -162,7 +162,7 @@ WSDM 2018 知识图谱 tutorial，标题为 Mining Knowledge Graphs from Text，
 
 #### 所谓概率模型，概率从哪里来？
 
-在图上定义联合概率分布 P(Who, What, How | Extractions)，即 P(实体, 属性, 关系 | 抽取)。利用图中事实之间的依存关系，定义联合概率（条件概率、转移概率）。
+在图上定义联合概率分布 `P(Who, What, How | Extractions)`，即 `P(实体, 属性, 关系 | 抽取)`。利用图中事实之间的依存关系，定义联合概率（条件概率、转移概率）。
 
 概率的决定方式有三种：文本抽取器和分类器提供的统计信号；领域的本体知识；从数据中挖掘出的规则和模式。
 
@@ -200,7 +200,7 @@ WSDM 2018 知识图谱 tutorial，标题为 Mining Knowledge Graphs from Text，
 - PRA：即 Path Ranking Algorithm，在不完全知识图谱上进行随机游走，用动态规划估计转移概率，用逻辑回归学习路径的权重参数
 - ProPPR：即 Programming with Personalized PageRank，构造以 partially-ground clauses 为顶点、以变换规则为边的证明图（proof graph），用随机梯度下降法学习随机游走的权重
 
-> 例如，在知识图谱中，John Lennon 是顶点，ChildOf 是边。在 ProPPR 中，如果查询 R(John Lennon, HasNationality, ?)，那么构造证明图，R(John Lennon, ChildOf, X), R(X, HasNationality, Y) 是一个顶点。具体知识可以查阅知识图谱、推荐系统相关文献。
+> 例如，在知识图谱中，John Lennon 是顶点，ChildOf 是边。在 ProPPR 中，如果查询 `R(John Lennon, HasNationality, ?)`，那么构造证明图，`R(John Lennon, ChildOf, X)`, `R(X, HasNationality, Y)` 是一个顶点。具体知识可以查阅知识图谱、推荐系统相关文献。
 
 ### 嵌入式模型
 
