@@ -1,5 +1,5 @@
 permalink: /:year-:month-:day-:title/
-url: http://sighsmile.github.io
+url: https://sighsmile.github.io
 author: sighsmile
 safe: true
 paginate: 16
