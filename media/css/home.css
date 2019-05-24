@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Galdeano);
 @media screen {
-.container {
-width:auto;
-padding:20px;
+#container {
+max-width: 50em; /* the upper limit of the length of a single line */
+padding: 2em; /* make room between content and the border */
+margin: 0 auto;  /* center */
 }
 
 .sitename {
@@ -71,12 +72,6 @@ p a {
 border-bottom:1px dashed #bbb;
 }
 
-.container {
-margin-left:5px;
-margin-right:5px;
-zoom:1px;
-width:800px;
-}
 
 p {
 font-size:15px;
@@ -103,7 +98,7 @@ line-height:30px;
 }
 
 h1,h2,h3,h4,h5,h6 {
-font-weight:400;
+font-weight:bold;
 color:#555;
 text-rendering:optimizelegibility;
 margin:0;
@@ -346,7 +341,11 @@ height:0;
 height:auto;
 }
 
-.nav {
+
+/*nav a{display:block;padding:.7em 1em;color:#000000;}
+nav a:hover{background-color:#ff0000;text-decoration:none;color:#f9f9f9;-webkit-transition:color .2s linear;}*/
+
+/*.nav {
 margin-left:0;
 margin-bottom:20px;
 list-style:none;
@@ -362,7 +361,7 @@ text-decoration:none;
 color:#fff;
 background-color:#b9221f;
 }
-
+*/
 .pills {
 zoom:1px;
 }
@@ -455,6 +454,12 @@ color:#fff;
 background-color:#b9221f;
 }
 
+
+header{
+    padding:0em 0em;
+    border-bottom: 1px solid #cccccc;
+}
+
 h1 small,h2 small {
 font-size:18px;
 }
@@ -496,11 +501,26 @@ float:left;
 float:right;
 }
 
+/* year */
+.listing-seperator { 
+    list-style-type: none;
+}
+
+/* date and title */
+.listing-item time{
+    color:#999999;
+}
+
+.listing-item a{
+    padding:1em 1em;
+}
+
+
 .paginator {
-color: #AAA;
-margin: 20px 0;
-line-height: 150%;
-display: block;
+    color: #AAA;
+    margin: 20px 0;
+    line-height: 150%;
+    display: block;
 }
 
 .paginator a,.paginator span{
@@ -515,8 +535,51 @@ background: #ff0000;
 }
 
 .paginator a:hover{
-color: white;
-background: #83BF73;
+color: white; 
+background: #ff0000;
+-webkit-transition:color .2s linear;
+}
+
+nav{
+    text-transform:uppercase;
+    color: #AAA;
+    /*display: block;*/
+    font-size:18px;
+    font-weight:bold;
+    text-align: left;
+    margin-left: 0;
+    /*float:left;margin-left:-12em;width:9em;text-align:right;*/
+}
+
+nav a, nav span{
+    padding: 0 0;
+    margin-right: 0.5em;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:white;
+    background-color: #ff0000;
+    -webkit-transition:color .2s linear;
+}
+
+.pageNav, .pageNavInvalid{
+    text-transform:uppercase;
+    font-weight:bold;
+    text-align:left;
+}
+
+.pageNavInvalid, .pageNavInvalid:hover{
+    color:#D0D0D0;
+}
+
+.pageNav:hover{
+    color:white;
+    background-color: #ff0000;
+    -webkit-transition:color .2s linear;
+}
+{
+    color:#D0D0D0;
 }
 
 /*https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
@@ -531,5 +594,4 @@ background: #83BF73;
   word-break: break-all;
   /* Instead use this non-standard one: */
   word-break: break-word;
-
 }
