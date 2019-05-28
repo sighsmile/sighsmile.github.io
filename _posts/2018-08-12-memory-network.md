@@ -193,9 +193,9 @@ $\Phi_X$、$\Phi_K$、$\Phi_V$、$\Phi_Y$ 是将相应文本映射到 $D$ 维特
 
 在时刻 $t$，输入 $x_t$，对每一个 $(k, h)$（为方便，省略上标），计算它们与输入内容的相似度，作为门限。由于记忆块彼此之间是独立的，可以并行更新：
 
-$$g_t = \sigma (x_t^{\top}h_{t-1} + x_t^{\top} k)$$
-$$\tilde{h}_t = \phi (U h_{t-1} + V w + W x_t)$$
-$$h_t = h_{t-1} + g_t \circ \tilde{h}_t$$
+- $g_t = \sigma (x_t^{\top}h_{t-1} + x_t^{\top} k)$
+- $\tilde{h}_t = \phi (U h_{t-1} + V w + W x_t)$
+- $h_t = h_{t-1} + g_t \circ \tilde{h}_t$
 
 然后归一化 $h_t$ 长度为 1，即 $h_t \leftarrow \frac{h_t}{\lVert h_t \rVert}$。
 
@@ -220,9 +220,9 @@ DMN 的大致结构与多轮查找的 MemN2N 相似，但是有两个主要的�
 
 DMN 每一轮对记忆向量的更新方式是 GRU + attention：
 
-$$h_t^i = g_t^i GRU(c_t, h_{t-1}^i) + (1-g_t^i) h_{t-1}^i$$
-$$e^i = h_T^i$$
-$$m^i = GRU(e^i, m^{i-1})$$
+- $h_t^i = g_t^i GRU(c_t, h_{t-1}^i) + (1-g_t^i) h_{t-1}^i$
+- $e^i = h_T^i$
+= $m^i = GRU(e^i, m^{i-1})$
 
 其中 attention 也改成了对每个 $t$ 分别计算门限 $g_t^i = G(c_t, m^{i-1}, q)$，$G$ 是一个可以反向传播训练的函数。
 初始化 $m^{0} = q$。
