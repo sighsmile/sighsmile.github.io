@@ -222,7 +222,7 @@ DMN 每一轮对记忆向量的更新方式是 GRU + attention：
 
 - $h_t^i = g_t^i GRU(c_t, h_{t-1}^i) + (1-g_t^i) h_{t-1}^i$
 - $e^i = h_T^i$
-= $m^i = GRU(e^i, m^{i-1})$
+- $m^i = GRU(e^i, m^{i-1})$
 
 其中 attention 也改成了对每个 $t$ 分别计算门限 $g_t^i = G(c_t, m^{i-1}, q)$，$G$ 是一个可以反向传播训练的函数。
 初始化 $m^{0} = q$。
