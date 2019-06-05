@@ -4,7 +4,7 @@ layout: page
 comments: no
 ---
 
-[LinkedIn](https://www.linkedin.com/in/suicn/)
+Reach me at `'pkuscnA163BC'.replace('A', '(at)').replace('B', '(dot)').replace('C', 'com')` if you have ideas or opportunities to share with me :-)
 
 ## Education
 
@@ -18,3 +18,12 @@ comments: no
 
 2012 - 2015. Translator.
 
+## Languages
+
+Python.
+
+Chinese, English, Japanese, Russian, and more.
+
+## Interests
+
+Natural languages. Programming languages. Mathematics. Algorithms. Books. Home libraries. 
