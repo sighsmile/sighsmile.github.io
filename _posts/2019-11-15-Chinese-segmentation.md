@@ -25,23 +25,23 @@ tags:
 ## 分词思路概览
 
 总的来说，分词的目标就是在上下文 <span>$C$</span> 中，将连续文本 <span>$S$</span> 划分为词序列，或者说将连续字序列 <span>$c_1, \ldots, c_m$</span> 组合为词序列 <span>$w_1, \ldots, w_n$</span>。关键的问题是，如何确定划分或组合的标准，求解 
-$$\arg\max_{n, w_1, \ldots, w_n} p(w_1, \ldots, w_n|C) \quad s.t. \quad w_1 |\cdots |w_n=S, w_i \in D$$
+<div>$$\arg\max_{n, w_1, \ldots, w_n} p(w_1, \ldots, w_n|C) \quad s.t. \quad w_1 |\cdots |w_n=S, w_i \in D$$</div>
 
 上式中 <span>$D$</span> 是理想的完整词典；本文以及传统分词一般不考虑上下文，可以将 <span>$C$</span> 省略（如果要发文章或者做其它 NLP，还是要注意加入 context-aware 的思想）。
 
 要想在满足 <span>$w_1 |\cdots |w_n=S$</span> 的约束下，得到 <span>$\max_{n, w_i} p(w_1, \ldots, w_n)$</span>，最理想的情况当然是有语言模型或者有分好词的语料训练语言模型。
 
 最常见的基于词的 ngram 语言模型是单向语言模型
-$$\max_{n, w_i} p(w_1)p(w_2|w_1)p(w_3|w_1,w_2)\cdots p(w_n|w_1,\ldots,w_{n-1})$$
+<div>$$\max_{n, w_i} p(w_1)p(w_2|w_1)p(w_3|w_1,w_2)\cdots p(w_n|w_1,\ldots,w_{n-1})$$</div>
 考虑马尔可夫性质，简化为一阶马尔可夫模型 
-$$\max_{n, w_i} p(w_1)p(w_2|w_1)p(w_3|w_2)\cdots p(w_n|w_{n-1})$$
+<div>$$\max_{n, w_i} p(w_1)p(w_2|w_1)p(w_3|w_2)\cdots p(w_n|w_{n-1})$$</div>
 完全忽略上文，进一步简化为独立概率乘积 
-$$\max_{n, w_i} p(w_1)p(w_2)p(w_3)\cdots p(w_n)$$
+<div>$$\max_{n, w_i} p(w_1)p(w_2)p(w_3)\cdots p(w_n)$$</div>
 
 另外，基于字的模型也是一种思路，在连续字序列 <span>$c_1, \ldots, c_m$</span> 中间插入若干个 `<seg>` 作为词间的分隔字，构成新的字序列 <span>$s_1, \ldots, s_{m'}$</span>，并相应组合为词序列，这样的单向语言模型为
-$$\max_{m', s_i} p(s_1) p(s_2|s_1) p(s_3|s_1,s_2) \cdots p(s_{m'}|s_1,\ldots,s_{m'-1})$$
+<div>$$\max_{m', s_i} p(s_1) p(s_2|s_1) p(s_3|s_1,s_2) \cdots p(s_{m'}|s_1,\ldots,s_{m'-1})$$</div>
 进一步简化为字的 bigram，也就是一阶马尔可夫模型
-$$\max_{m', s_i} p(s_1) p(s_2|s_1) p(s_3|s_2) \cdots p(s_{m'}|s_{m'-1})$$
+<div>$$\max_{m', s_i} p(s_1) p(s_2|s_1) p(s_3|s_2) \cdots p(s_{m'}|s_{m'-1})$$</div>
 
 上面的想法都需要词表及相应的概率估计。
 
@@ -132,9 +132,9 @@ Trie 还可进一步增加局部匹配的跳转链接，构成 AC 自动机，�
 总之，设法利用标点符号作为天然的分隔符，找到经常独立出现的片段，利用出现和共现的统计，找到内部搭配固定、外部搭配自由灵活的片段，这些都是候选的词。实际上这也有些类似于 frequent itemset mining 的做法。
 
 凝固度为何用 PMI 衡量呢？想象语料中的两个“字” x 和 y。初始假设 x 和 y 分别是词（频率分别记为 <span>$a$</span> 和 <span>$b$</span>），然后假设 xy 共现时合并为一个词（xy 共现的频率记为 <span>$q$</span>），在这个过程中（由于 <span>$q$</span> 很小，其他词频率的变化忽略不计），总的熵的变化近似为
-$$\Delta H = a \log a + b \log b - (a-q) \log (a-q) - (b-q) \log (b-q) - q \log q$$
+<div>$$\Delta H = a \log a + b \log b - (a-q) \log (a-q) - (b-q) \log (b-q) - q \log q$$</div>
 整理得
-$$\Delta H = a \log \frac{a}{a-q} + b \log \frac{b}{b-q} - q \log \frac{q}{ab}$$
+<div>$$\Delta H = a \log \frac{a}{a-q} + b \log \frac{b}{b-q} - q \log \frac{q}{ab}$$</div>
 前两项大于 0 且非常接近 0（因为 <span>$q$</span> 一般远小于 <span>$a$</span> 和 <span>$b$</span>），所以我们主要关心最后一项。
 
 上面的方法需要统计 everygram 的频率，并反复计算其前缀、后缀的频率。在现实中，我们会受到一些限制，诸如：ngram 的大小不能太大，否则肯定会爆内存；需要采用适当的数据结构（排序的前缀集、前缀树 Trie）加速左右邻字的频率统计；完全无监督的情况下，阈值不太好确定；有些词的切分会和我们直觉不一致，例如`我们`可能被切开。
