@@ -79,7 +79,7 @@ EM 算法大致是首先根据当前的参数猜测，估计隐变量的分布�
 
 第二步，为进行最大似然估计，我们想要 <span>$\arg \max_{\theta} \log p_{\theta}(x)$</span>。设隐变量的真实分布为 <span>$p(z)$</span>，由于 
 <div>$$p_{\theta}(x) = \sum_z p_{\theta}(x, z) = \sum_z p(z) \frac{p_{\theta}(x, z)}{p(z)} = \mathbb{E}_ {z \sim p}\frac{p_{\theta}(x, z)}{p(z)}$$</div>
-对数为凸函数，利用 Jensen 不等式可以证明
+利用 Jensen 不等式可以证明
 <div>$$\log \mathbb{E}_ {z \sim p}\frac{p_{\theta}(x, z)}{p(z)} \geq 
 \mathbb{E}_ {z \sim p} \log \frac{p_{\theta}(x, z)}{p(z)} = 
 -KL(p(z)||p_{\theta}(x, z)) = 
