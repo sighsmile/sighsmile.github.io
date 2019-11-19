@@ -74,20 +74,22 @@ EM 算法大致是首先根据当前的参数猜测，估计隐变量的分布�
 
 现在详细解释其中的计算步骤，可比照前面的硬币例子理解。注意引入记号 <span>$p_{\theta}(x) = p(x|\theta)$</span>：
 
-1. 以现有的（初始化或者之前迭代更新过的） <span>$\theta^{(t)}$</span> 为条件，计算 <span>$p_{\theta^{(t)}}(z)$</span> 和 <span>$p_{\theta^{(t)}}(x|z)$</span>，然后用贝叶斯公式对隐变量的分布做估计，计算 
+第一步，以现有的（初始化或者之前迭代更新过的） <span>$\theta^{(t)}$</span> 为条件，计算 <span>$p_{\theta^{(t)}}(z)$</span> 和 <span>$p_{\theta^{(t)}}(x|z)$</span>，然后用贝叶斯公式对隐变量的分布做估计，计算 
 <div>$$p_{\theta^{(t)}}(z|x)$$</div>（在硬币例子中，就是计算每轮隐变量取 A 的贝叶斯概率）
-2. 为进行最大似然估计，我们想要 <span>$\arg \max_{\theta} \log p_{\theta}(x)$</span>。设隐变量的真实分布为 <span>$p(z)$</span>，由于 
+
+第二步，为进行最大似然估计，我们想要 <span>$\arg \max_{\theta} \log p_{\theta}(x)$</span>。设隐变量的真实分布为 <span>$p(z)$</span>，由于 
 <div>$$p_{\theta}(x) = \sum_z p_{\theta}(x, z) = \sum_z p(z) \frac{p_{\theta}(x, z)}{p(z)} = \mathbb{E}_ {z \sim p}\frac{p_{\theta}(x, z)}{p(z)}$$</div>
 对数为凸函数，利用 Jensen 不等式可以证明
-$$\log \mathbb{E}_ {z \sim p}\frac{p_{\theta}(x, z)}{p(z)} \geq 
+<div>$$\log \mathbb{E}_ {z \sim p}\frac{p_{\theta}(x, z)}{p(z)} \geq 
 \mathbb{E}_ {z \sim p} \log \frac{p_{\theta}(x, z)}{p(z)} = 
 -KL(p(z)||p_{\theta}(x, z)) = 
-\mathbb{E}_ {z \sim p} \log p_{\theta}(x, z) + H(p(z))$$
+\mathbb{E}_ {z \sim p} \log p_{\theta}(x, z) + H(p(z))$$</div>
 因而我们可以将优化目标从左边的 <span>$\log \mathbb{E}$</span> 改为右边的第一项 <span>$\mathbb{E} \log$</span>。
 现在假设前一步的隐变量分布就是真实分布（当然我们知道它并不是），我们的目标就变成
-$$\mathbb{E}_ {z \sim p_{\theta^{(t)}}(z|x)} \log p_{\theta}(x,z)
-$$（在硬币例子中，我们计算硬币 A 和 B 的抛掷结果的期望，对应于此步）
-3. 更新对参数的最大似然估计 
+<div>$$\mathbb{E}_ {z \sim p_{\theta^{(t)}}(z|x)} \log p_{\theta}(x,z)$$</div>
+（在硬币例子中，我们计算硬币 A 和 B 的抛掷结果的期望，对应于此步）
+
+第三步，更新对参数的最大似然估计 
 <div>$$\theta^{(t+1)} = \arg \max_{\theta} \mathbb{E}_ {z \sim p_{\theta^{(t)}}(z|x)} \log p_{\theta}(x,z)$$</div>
 当然这也等价于 <span>$\arg \min_{\theta} -KL(p(z)||p_{\theta}(x, z))$</span>。
 
